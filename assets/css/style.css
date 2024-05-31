@@ -1,0 +1,11 @@
+#backgroundCard{
+    background-image: url("../images/border1.png");
+    background-size: cover;
+    height: 400px;
+}
+ 
+#backgroundCard2{
+    background-image: url("../images/border2.png");
+    background-size: cover;
+    height: 400px;
+}
