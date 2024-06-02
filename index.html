@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
   <title>EduWell - Education HTML5 Template</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +31,44 @@ TemplateMo 573 EduWell
 https://templatemo.com/tm-573-eduwell
 
 -->
+
+<style>
+  .siblings * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 35px;
+  }
+  #panel, #panel2, #panel3 {
+  padding: 5px;
+  margin: 35px;
+  text-align: center;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  border: solid 1px #c3c3c3;
+}
+
+
+  </style>
+  <script>
+    $(document).ready(function(){
+      $(".buttonNext").click(function(){
+        $(".p").next().css({"color": "red", "border": "2px solid red"});
+      });
+      $("#panel").hide();
+      $(".buttonSlideDown").click(function(){
+        $("#panel").slideDown("slow");
+      });
+      $(".buttonSlideUp").click(function(){
+        $("#panel2").slideUp("slow");
+      });
+      $(".buttonSlideToggle").click(function(){
+        $("#panel3").slideToggle("slow");
+      });
+});
+
+
+  </script>
 </head>
 
 <body>
@@ -101,18 +140,27 @@ https://templatemo.com/tm-573-eduwell
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body"  id="backgroundCard">
-              <h5 class="card-title text-center pt-5">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title text-center pt-5">jQuery .next</h5>
+              <p class="card-text">.next() est une fonction de jQuery qui permet de récupérer l'élément suivant</p>
+              <p class="card-text">
+                <div class="siblings">
+                <p class="p">Lorem ipsum dolor sit amet.</p>
+                <h3>.next</h3>
+              </div>
+            </p>
+              <button type="button" class="btn btn-outline-warning buttonNext">.next</button>
+              <button type="button" class="btn btn-outline-danger buttonResetNext">Reset</button>
             </div>
           </div>
         </div>
         <div class="col-lg-6 mt-sm-3 mt-lg-0 mt-xs-5">
           <div class="card">
             <div class="card-body"  id="backgroundCard2">
-              <h5 class="card-title text-center pt-5">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title text-center pt-5">jQuery .slideDown()</h5>
+              <p class="card-text">La méthode slideDown() va nous permettre de “déplier” un élément progressivement</p>
+              <div id="panel">SlideDown</div>
+              <button type="button" class="btn btn-outline-warning buttonSlideDown">.SlideDown</button>
+              <button type="button" class="btn btn-outline-danger buttonResetSlideDown">Reset</button>
             </div>
           </div>
         </div>     
@@ -123,19 +171,23 @@ https://templatemo.com/tm-573-eduwell
     <div class="row">
       <div class="col-lg-6">
         <div class="card">
-          <div class="card-body"  id="backgroundCard">
-            <h5 class="card-title text-center pt-5">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body"  id="backgroundCard2">
+            <h5 class="card-title text-center pt-5">jQuery .slideUp()</h5>
+            <p class="card-text">La méthode slideUp() va produire l'effet inverse et nous permettre de “replier” un élément progressivement.</p>
+            <div id="panel2">SlideUp</div>
+            <button type="button" class="btn btn-outline-warning buttonSlideUp">.SlideUp</button>
+            <button type="button" class="btn btn-outline-danger buttonResetSlideUp">Reset</button>
           </div>
         </div>
       </div>
       <div class="col-lg-6 mt-sm-3 mt-lg-0 mt-xs-5">
         <div class="card">
           <div class="card-body"  id="backgroundCard2">
-            <h5 class="card-title text-center pt-5">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title text-center pt-5">jQuery .slideToggle()</h5>
+            <p class="card-text">La méthode slideToggle() permet de faire apparaître l’élément s'il a disparu, et inversement, à la manière d'un interrupteur.</p>
+            <div id="panel3">SlideToggle</div>
+            <button type="button" class="btn btn-outline-warning buttonSlideToggle">.SlideToggle</button>
+            <button type="button" class="btn btn-outline-danger buttonResetSlideToggle">Reset</button>
           </div>
         </div>
       </div>     
@@ -221,7 +273,6 @@ https://templatemo.com/tm-573-eduwell
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>

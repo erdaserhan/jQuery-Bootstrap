@@ -9,3 +9,89 @@
     background-size: cover;
     height: 400px;
 }
+
+#titreExemple {
+    background-color: white;
+
+}
+
+#titleHome {
+    font-size: 45px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+#sousTexte {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: black;
+
+}
+
+#gradientJquery {
+    background: linear-gradient(90deg, hsla(22, 83%, 79%, 1) 31%, hsla(301, 53%, 71%, 1) 66%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/*Bouton exemple 1 */
+#btnChangeTexte,
+#btnExemple2,
+#btnExemple3,
+#btnExemple4,
+#btnExemple5,
+#btnExemple6,
+#btnExemple7,
+#btnExemple8,
+#btnExemple9,
+#btnExemple10 {
+    border: none;
+    outline: none;
+    background-color: #fad38b;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #f9c793;
+}
+
+#btnChangeTexte:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+/*Bouton reset 1*/
+#reset1,
+#reset2,
+#reset3,
+#reset4,
+#reset5,
+#reset6,
+#reset7,
+#reset8,
+#reset9,
+#reset10 {
+    border: none;
+    outline: none;
+    background-color: #fab9dc;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #eb63e0;
+}
+
+#reset1:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+}
