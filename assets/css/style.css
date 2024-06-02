@@ -41,16 +41,16 @@
 }
 
 /*Bouton exemple 1 */
-#btnChangeTexte,
-#btnExemple2,
-#btnExemple3,
-#btnExemple4,
-#btnExemple5,
-#btnExemple6,
-#btnExemple7,
-#btnExemple8,
-#btnExemple9,
-#btnExemple10 {
+#btnNext,
+#btnSlideDown,
+#btnSlideUp,
+#btnSlideToggle,
+#btnParent,
+#btnHtml,
+#btnFadeIn,
+#btnFadeOut,
+#btnFadeToggle,
+#btnFadeTo {
     border: none;
     outline: none;
     background-color: #fad38b;
@@ -68,17 +68,15 @@
     box-shadow: 0px 0px 0px 0px #a29bfe;
 }
 
-/*Bouton reset 1*/
-#reset1,
-#reset2,
-#reset3,
-#reset4,
-#reset5,
-#reset6,
-#reset7,
-#reset8,
-#reset9,
-#reset10 {
+/* Style Erhan */
+#resetNext,
+#resetSlideDown,
+#resetSlideUp,
+#resetParent,
+#resetHtml,
+#resetFadeIn,
+#resetFadeOut,
+#resetFadeTo {
     border: none;
     outline: none;
     background-color: #fab9dc;
@@ -94,4 +92,26 @@
 #reset1:active {
     transform: translateY(5px);
     box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+
+
+
+
+
+
+/* Menu Start */
+ .siblings * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 35px;
+  }
+  #panel, #panel2, #panel3 {
+  padding: 5px;
+  margin: 35px;
+  text-align: center;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  border: solid 1px #c3c3c3;
 }
