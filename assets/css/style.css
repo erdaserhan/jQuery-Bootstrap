@@ -1,10 +1,12 @@
-#backgroundCard{
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+#backgroundCard {
     background-image: url("../images/border1.png");
     background-size: cover;
     height: 400px;
 }
- 
-#backgroundCard2{
+
+#backgroundCard2 {
     background-image: url("../images/border2.png");
     background-size: cover;
     height: 400px;
@@ -40,7 +42,17 @@
     font-weight: bold;
 }
 
-/*Style Erhan */
+/*Bouton exemple 1 */
+#btnChangeTexte,
+#btnExemple2,
+#btnExemple3,
+#btnExemple4,
+#btnExemple5,
+#btnExemple6,
+#btnExemple7,
+#btnExemple8,
+#btnExemple9,
+#btnExemple10,
 #btnNext,
 #btnSlideDown,
 #btnSlideUp,
@@ -68,7 +80,17 @@
     box-shadow: 0px 0px 0px 0px #a29bfe;
 }
 
-/* Style Erhan */
+/*Bouton reset 1*/
+#reset1,
+#reset2,
+#reset3,
+#reset4,
+#reset5,
+#reset6,
+#reset7,
+#reset8,
+#reset9,
+#reset10,
 #resetNext,
 #resetSlideDown,
 #resetSlideUp,
@@ -94,19 +116,26 @@
     box-shadow: 0px 0px 0px 0px #a29bfe;
 }
 
-
-/* Menu Start */
- .siblings * { 
+.siblings * {
     display: block;
     border: 2px solid lightgrey;
     color: lightgrey;
     padding: 5px;
     margin: 35px;
-  }
-  #panel, #panel2, #panel3 {
-  padding: 5px;
-  margin: 35px;
-  text-align: center;
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  border: solid 1px #c3c3c3;
+    width: 50%;
+
+}
+
+#panel,
+#panel2,
+#panel3 {
+    padding: 5px;
+    margin: 35px auto;
+    text-align: center;
+    background: radial-gradient(circle, hsla(22, 83%, 79%, 1) 0%, hsla(19, 81%, 80%, 1) 5%, hsla(319, 57%, 75%, 1) 91%, hsla(301, 53%, 71%, 1) 100%);
+    border: solid 1px #c3c3c3;
+}
+
+#logoErhanAntho {
+    border: none;
 }

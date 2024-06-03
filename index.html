@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
 
-  <title>EduWell - Education HTML5 Template</title>
+  <title>Project Anthony-Erhan</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -53,14 +53,13 @@ https://templatemo.com/tm-573-eduwell
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
-              
-              <!--<img src="assets/images/templatemo-eduwell.png" alt="EduWell Template">-->
+              <img src="assets/images/logoJquery.png" alt="logo jQuery" id="logoJquery">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Accueil</a></li>
-              <li class="scroll-to-section"><a href="https://jquery.com/" target="_blank">Documentation</a></li>
+              <li><a href="https://jquery.com/" target="_blank">Documentation</a></li>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -73,24 +72,27 @@ https://templatemo.com/tm-573-eduwell
   </header>
 
   <!-- ***** Header Area End ***** -->
+  <!-- ***** Header Area End ***** -->
   <section class="main-banner" id="top">
     <div class="container">
       <div class="row">
         <div class="col-lg-6  text-center">
           <div class="header-text">
-
             <h2 id="titleHome" class="animate__animated animate__fadeInDown animate__slow animate__delay-1s">Plongez
               dans l'Interactivité
               : </h2>
-            <p id="sousTexte" class="animate__animated animate__fadeInUp animate__slow animate__delay-2s">Découvrez les
-              Possibilités <br><br><br>Infinies de <span id="gradientJquery">jQuery</span></p>
+            <p id="sousTexte" class="animate__animated animate__fadeInUp animate__slow animate__delay-2s">Découvrez les Possibilités<br><br><br>Infinies de <span id="gradientJquery">jQuery</span></p>
             <!--<div class="main-button-gradient mt-4">
               <div class="scroll-to-section"><a href="#contact-section">Join Us Now!</a></div>
             </div>-->
           </div>
         </div>
-        <div class="col-lg-4  text-center">
-          <img class="rounded-5 img-thumbnail"src="assets/images/Anthony - Erhan.jpg" alt="">
+        <div class="col-md-10 col-sm-12 col-lg-4 col-10 col-xs-12 ms-md-5 ms-4 ms-sm-2">
+          <div class="product">               
+              <div class="product-img">
+                  <img class="img-responsive rounded-5 img-thumbnail animate__animated animate__jackInTheBox animate__slow" src="assets/images/Anthony - Erhan.jpg" alt="" />
+              </div>
+          </div>
         </div>
         <!--<div class="col-lg-6">
           <div class="right-image">
@@ -100,6 +102,7 @@ https://templatemo.com/tm-573-eduwell
       </div>
     </div>
   </section>
+
   <!-- ***** Main Banner Area Start ***** -->
   <section class="main-banner" id="top">
     <div class="container">
@@ -107,37 +110,205 @@ https://templatemo.com/tm-573-eduwell
         <div class="col-lg-6 align-self-center">
           <div class="header-text">
             <div class=" mb-3 text-center">
-              La méthode .next()
+              La méthode .text()
             </div>
             <div class=" mb-3 ms-2 text-center">
-              .next() est une fonction de jQuery qui permet de récupérer l'élément suivant. <br>
+              .text() est utilisée pour changer le texte d'un élément par un autre. <br>
             </div>
             <div class="card me-3">
               <div class="card-body text-center" id="backgroundCard">
-                <h5 class="card-title text-center pt-5">La méthode .next()</h5>
-                <p class="card-text">
-                  <div class="siblings">
-                  <p class="p">Paragraphe 1</p>
-                  <p class="p2">Paragraphe 2</p>
-                </div>
-              </p>
-                <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnNext">next</button>
-                <button type="button" class="btn btn-secondary btn-sm mt-5" id="resetNext">Reset</button>
+                <h5 class="card-title text-center pt-5">Exemple 1</h5>
+                <div class="text-center pt-5 mt-4" id="exemple1">Changez mon texte !</div>
+                <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnChangeTexte">Changez le
+                  texte</button>
+                <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset1">Reset</button>
               </div>
             </div>
           </div>
         </div>
+
         <div class="col-lg-6">
+          <div class=" mb-3 text-center">
+            La méthode .css()
+          </div>
+          <div class=" mb-3 text-center">
+            .css() est utilisée pour changer l'apparence d'un élément.
+          </div>
+          <div class="card ms-5">
+            <div class="card-body text-center" id="backgroundCard2">
+              <h5 class="card-title text-center pt-5">Exemple 2</h5>
+              <div class="text-center pt-5 mt-4" id="exemple2">Changez mon apparence!</div>
+              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnExemple2">Changez son style</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset2">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+          <div class=" mb-3 text-center">
+            La méthode .hide()
+          </div>
+          <div class=" mb-3 text-center">
+            .hide() permet de cacher un élément le rendant invisible
+          </div>
+          <div class="card me-3">
+            <div class="card-body text-center" id="backgroundCard2">
+              <h5 class="card-title text-center pt-5">Exemple 3</h5>
+              <div class="text-center pt-5 mt-4" id="exemple3">Faites moi disparaitre!</div>
+              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnExemple3">Masquer le texte</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset3">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+          <div class=" mb-3 text-center">
+            La méthode .show()
+          </div>
+          <div class=" mb-3 ms-5 text-center">
+            .show() est utilisée pour faire apparaitre un élément qui était masqué.
+          </div>
+          <div class="card ms-5">
+            <div class="card-body text-center" id="backgroundCard">
+              <h5 class="card-title text-center pt-5">Exemple 4</h5>
+              <div class="text-center pt-5 mt-4" id="exemple4" style="display: none;">Et voilà ! Je suis là !</div>
+              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnExemple4">Faites le
+                apparaitre</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset4">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+          <div class=" mb-3 text-center">
+            La méthode .remove()
+          </div>
+          <div class=" mb-3 text-center">
+            .remove() est utilisée pour supprimer définitivement un élément.
+          </div>
+          <div class="card me-3">
+            <div class="card-body text-center" id="backgroundCard">
+              <h5 class="card-title text-center pt-5">Exemple 5</h5>
+              <div class="text-center pt-5 mt-4" id="exemple5">Supprimez moi !</div>
+              <div class="text-center pt-5 mt-4" id="exemple5Reset" style="display: none;">Supprimez moi !</div>
+              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnExemple5">Supprimer le</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset5">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+          <div class=" mb-3 text-center">
+            La méthode .after()
+          </div>
+          <div class=" mb-3 text-center ms-5">
+            .after() est utilisée pour insérer du contenu après un élément spécifique.
+          </div>
+          <div class="card ms-5">
+            <div class="card-body text-center" id="backgroundCard2">
+              <h5 class="card-title text-center pt-5">Exemple 6</h5>
+              <div class="text-center pt-5 mt-4" id="exemple6">Ajoutez un élément juste après!</div>
+              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnExemple6">Ajouter élément</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset6">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+          <div class=" mb-3 text-center">
+            La méthode .prepend()
+          </div>
+          <div class=" mb-3 text-center">
+            .prepend() est utilisée pour ajouter du contenu au début d'un élément.
+          </div>
+          <div class="card me-3">
+            <div class="card-body text-center" id="backgroundCard2">
+              <h5 class="card-title text-center pt-5">Exemple 7</h5>
+              <div class="text-center pt-5 mt-4" id="exemple7">Ajoutez du contenu avant moi !</div>
+              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnExemple7">Ajouter élément</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset7">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+          <div class=" mb-3 text-center">
+            La méthode .before()
+          </div>
+          <div class=" mb-3 text-center">
+            .before() sert à insérer du contenu avant un élément spécifique.
+          </div>
+          <div class="card ms-5">
+            <div class="card-body text-center" id="backgroundCard">
+              <h5 class="card-title text-center pt-5">Exemple 8</h5>
+              <div class="text-center pt-5 mt-4" id="exemple8">Ajoutez un élément juste avant moi </div>
+              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnExemple8">Ajouter élément</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset8">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+          <div class=" mb-3 text-center">
+            La méthode replaceWith()
+          </div>
+          <div class=" mb-3 text-center">
+            .replaceWith() est utilisé pour remplacer un élément par un autre.
+          </div>
+          <div class="card me-3">
+            <div class="card-body text-center" id="backgroundCard">
+              <h5 class="card-title text-center pt-5">Exemple 9</h5>
+              <div class="text-center pt-5 mt-4" id="exemple9">Remplacez moi !</div>
+              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnExemple9">Remplacer élément</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset9">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-5 mt-5">
+          <div class=" mb-3 text-center">
+            La méthode .animate()
+          </div>
+          <div class=" mb-3 text-center">
+            .animate() est utilisé pour ajouter de l'animation à des éléments.
+          </div>
+          <div class="card ms-5">
+            <div class="card-body text-center" id="backgroundCard2">
+              <h5 class="card-title text-center pt-5">Exemple 10</h5>
+              <div class="text-center pt-5 mt-4 mx-auto" id="exemple10"
+                style="background: radial-gradient(circle, hsla(22, 83%, 79%, 1) 0%, hsla(19, 81%, 80%, 1) 5%, hsla(319, 57%, 75%, 1) 91%, hsla(301, 53%, 71%, 1) 100%); height: 100px; width: 100px;">
+              </div>
+              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnExemple10">Animer élément</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-5" id="reset10">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center mt-5">
+          <div class="header-text">
+            <div class=" mb-3 text-center">
+              La méthode .next()
+            </div>
+            <div class=" mb-3 ms-2 text-center">
+              .next() est utilisée pour récupérer l'élément suivant. <br>
+            </div>
+            <div class="card me-3">
+              <div class="card-body text-center" id="backgroundCard2">
+                <h5 class="card-title text-center pt-5">Exemple 11</h5>
+                <p class="card-text">
+                <div class="siblings">
+                  <p class="p mx-auto rounded">Paragraphe 1</p>
+                  <p class="p2 mx-auto rounded">Paragraphe 2</p>
+                </div>
+                </p>
+                <button type="button" class="btn btn-primary btn-sm mt-3 me-3" id="btnNext">next</button>
+                <button type="button" class="btn btn-secondary btn-sm mt-3" id="resetNext">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5">
           <div class=" mb-3 text-center">
             La méthode .slideDown()
           </div>
           <div class=" mb-3 text-center">
-            La méthode slideDown() va nous permettre de “déplier” un élément progressivement.
+            .slideDown() nous permet de “déplier” un élément progressivement.
           </div>
-          <div class="card ms-5">
-            <div class="card-body text-center" id="backgroundCard2">
-              <h5 class="card-title text-center pt-5">La méthode .slideDown()</h5>
-              <div id="panel">SlideDown</div>
+          <div class=" card ms-5">
+            <div class="card-body text-center" id="backgroundCard">
+              <h5 class="card-title text-center pt-5">Exemple 12</h5>
+              <div id="panel" class="w-50 mw-auto rounded">SlideDown</div>
               <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnSlideDown">SlideDown</button>
               <button type="button" class="btn btn-secondary btn-sm mt-5" id="resetSlideDown">Reset</button>
             </div>
@@ -148,12 +319,12 @@ https://templatemo.com/tm-573-eduwell
             La méthode .slideUp()
           </div>
           <div class=" mb-3 text-center">
-            La méthode slideUp() va produire l'effet inverse et nous permettre de “replier” un élément progressivement.
+            .slideUp() produit l'inverse et nous permet de “replier” un élément.
           </div>
           <div class="card me-3">
-            <div class="card-body text-center" id="backgroundCard2">
-              <h5 class="card-title text-center pt-5"> La méthode .slideUp()</h5>
-              <div id="panel2">SlideUp</div>
+            <div class="card-body text-center" id="backgroundCard">
+              <h5 class="card-title text-center pt-5"> Exemple 13</h5>
+              <div id="panel2" class="w-50 mw-auto rounded">SlideUp</div>
               <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnSlideUp">SlideUp</button>
               <button type="button" class="btn btn-secondary btn-sm mt-5" id="resetSlideUp">Reset</button>
             </div>
@@ -164,12 +335,12 @@ https://templatemo.com/tm-573-eduwell
             La méthode .slideToggle()
           </div>
           <div class=" mb-3 ms-5 text-center">
-            La méthode slideToggle() permet de faire apparaître l’élément s'il a disparu, et inversement, à la manière d'un interrupteur.
+            .slideToggle() permet de faire apparaître l'élément disparu, et inversement.
           </div>
           <div class="card ms-5">
-            <div class="card-body text-center" id="backgroundCard">
-              <h5 class="card-title text-center pt-5">La méthode .slideToggle()</h5>
-              <div id="panel3">SlideToggle</div>
+            <div class="card-body text-center" id="backgroundCard2">
+              <h5 class="card-title text-center pt-5">Exemple 14</h5>
+              <div id="panel3" class="w-50 mw-auto rounded">SlideToggle</div>
               <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnSlideToggle">SlideToggle</button>
             </div>
           </div>
@@ -179,20 +350,20 @@ https://templatemo.com/tm-573-eduwell
             La méthode .parent()
           </div>
           <div class=" mb-3 text-center">
-            La méthode parents() permet d'accéder à tous les ancêtres d'un élément ou d'un groupe d'éléments sélectionnés. 
+            .parent() permet d'accéder aux ancêtres des éléments sélectionnés.
           </div>
           <div class="card me-3">
-            <div class="card-body text-center" id="backgroundCard">
-              <h5 class="card-title text-center pt-5">La méthode .parent()</h5>
+            <div class="card-body text-center" id="backgroundCard2">
+              <h5 class="card-title text-center pt-5">Exemple 15</h5>
               <p class="card-text">
-                <div class="siblings">
-                <li id="parentLi">Parent
-                  <span id="parent">Lorem ipsum dolor sit amet.</span>
+              <div class="siblings">
+                <li id="parentLi" class="mx-auto rounded-4">Parent
+                  <span id="parent" class="mx-auto">Je suis l'enfant.</span>
                 </li>
               </div>
-            </p>
-              <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnParent">Parent</button>
-              <button type="button" class="btn btn-secondary btn-sm mt-5" id="resetParent">Reset</button>
+              </p>
+              <button type="button" class="btn btn-primary btn-sm mt-1 me-3" id="btnParent">Parent</button>
+              <button type="button" class="btn btn-secondary btn-sm mt-1" id="resetParent">Reset</button>
             </div>
           </div>
         </div>
@@ -201,12 +372,12 @@ https://templatemo.com/tm-573-eduwell
             La méthode .html()
           </div>
           <div class=" mb-3 text-center ms-5">
-            La méthode html() définit ou renvoie le contenu (innerHTML) des éléments sélectionnés.
+            .html() définit ou renvoie le contenu (innerHTML) des éléments sélectionnés.
           </div>
           <div class="card ms-5">
-            <div class="card-body text-center" id="backgroundCard2">
-              <h5 class="card-title text-center pt-5">La méthode .html()</h5>
-              <p id="html">C'est une paragraphe</p>
+            <div class="card-body text-center" id="backgroundCard">
+              <h5 class="card-title text-center pt-5">Exemple 16</h5>
+              <p id="html" class="mt-5">Je suis un paragraphe</p>
               <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnHtml">HTML</button>
               <button type="button" class="btn btn-secondary btn-sm mt-5" id="resetHtml">Reset</button>
             </div>
@@ -217,12 +388,14 @@ https://templatemo.com/tm-573-eduwell
             La méthode .fadeIn()
           </div>
           <div class=" mb-3 text-center">
-            La méthode fadeIn() permet de faire apparaître les éléments avec une animation de fondu. $(selecteur).
+            .fadeIn() permet de faire apparaître les éléments avec une animation de fondu.
           </div>
           <div class="card me-3">
-            <div class="card-body text-center" id="backgroundCard2">
-              <h5 class="card-title text-center pt-5">La méthode .fadeIn()</h5>
-              <div id="fadeIn" class="offset-5" style="width:80px;height:80px;display:none;background:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"></div>
+            <div class="card-body text-center" id="backgroundCard">
+              <h5 class="card-title text-center pt-5">Exemple 17</h5>
+              <div id="fadeIn" class="offset-5 mt-4"
+                style="width:80px;height:80px;display:none;background: radial-gradient(circle, hsla(22, 83%, 79%, 1) 0%, hsla(19, 81%, 80%, 1) 5%, hsla(319, 57%, 75%, 1) 91%, hsla(301, 53%, 71%, 1) 100%);">
+              </div>
               <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnFadeIn">Fade In</button>
               <button type="button" class="btn btn-secondary btn-sm mt-5" id="resetFadeIn">Reset</button>
             </div>
@@ -232,13 +405,15 @@ https://templatemo.com/tm-573-eduwell
           <div class=" mb-3 text-center">
             La méthode .fadeOut()
           </div>
-          <div class=" mb-3 text-center">
-            La méthode fadeOut() permet de faire disparaître les éléments avec une animation de fondu. $(selecteur).
+          <div class=" mb-3 text-center ms-4">
+            .fadeOut() permet de faire disparaître les éléments avec une animation.
           </div>
-          <div class="card ms-5">
-            <div class="card-body text-center" id="backgroundCard">
-              <h5 class="card-title text-center pt-5">La méthode .fadeOut()</h5>
-              <div id="fadeOut" class="offset-5" style="width:80px;height:80px;background:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"></div>
+          <div class=" card ms-5">
+            <div class="card-body text-center" id="backgroundCard2">
+              <h5 class="card-title text-center pt-5">Exemple 18</h5>
+              <div id="fadeOut" class="offset-5 mt-4"
+                style="width:80px;height:80px;background: radial-gradient(circle, hsla(22, 83%, 79%, 1) 0%, hsla(19, 81%, 80%, 1) 5%, hsla(319, 57%, 75%, 1) 91%, hsla(301, 53%, 71%, 1) 100%);">
+              </div>
               <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnFadeOut">Fade Out</button>
               <button type="button" class="btn btn-secondary btn-sm mt-5" id="resetFadeOut">Reset</button>
             </div>
@@ -249,12 +424,14 @@ https://templatemo.com/tm-573-eduwell
             La méthode .fadeToggle()
           </div>
           <div class=" mb-3 text-center">
-            La méthode fadeToggle() permet de faire apparaître / disparaître les éléments avec une animation de fondu. $(selecteur). fadeToggle(vitesse,callback);
+            .fadeToggle() fait apparaître / disparaître les éléments avec une animation.
           </div>
           <div class="card me-3">
-            <div class="card-body text-center" id="backgroundCard">
-              <h5 class="card-title text-center pt-5">La méthode .fadeToggle()</h5>
-              <div id="fadeToggle" class="offset-5" style="width:80px;height:80px;background:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"></div>
+            <div class="card-body text-center" id="backgroundCard2">
+              <h5 class="card-title text-center pt-5">Exemple 19</h5>
+              <div id="fadeToggle" class="offset-5 mt-4"
+                style="width:80px;height:80px;background: radial-gradient(circle, hsla(22, 83%, 79%, 1) 0%, hsla(19, 81%, 80%, 1) 5%, hsla(319, 57%, 75%, 1) 91%, hsla(301, 53%, 71%, 1) 100%);">
+              </div>
               <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnFadeToggle">Fade Toggle</button>
             </div>
           </div>
@@ -264,12 +441,14 @@ https://templatemo.com/tm-573-eduwell
             La méthode .fadeTo()
           </div>
           <div class=" mb-3 text-center">
-            La méthode fadeTo()`. Elles permettent de faire apparaître ou disparaître des éléments avec une animation de fondu.
+            .fadeTo() permet d'ajuster l'opacité des éléments sélectionnés.
           </div>
           <div class="card ms-5">
-            <div class="card-body text-center" id="backgroundCard2">
-              <h5 class="card-title text-center pt-5">La méthode .fadeTo()</h5>
-              <div id="fadeTo" class="offset-5" style="width:80px;height:80px;background:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);"></div>
+            <div class="card-body text-center" id="backgroundCard">
+              <h5 class="card-title text-center pt-5">Exemple 20</h5>
+              <div id="fadeTo" class="offset-5 mt-4"
+                style="width:80px;height:80px;background: radial-gradient(circle, hsla(22, 83%, 79%, 1) 0%, hsla(19, 81%, 80%, 1) 5%, hsla(319, 57%, 75%, 1) 91%, hsla(301, 53%, 71%, 1) 100%);">
+              </div>
               <button type="button" class="btn btn-primary btn-sm mt-5 me-3" id="btnFadeTo">Fade To</button>
               <button type="button" class="btn btn-secondary btn-sm mt-5" id="resetFadeTo">Reset</button>
             </div>
@@ -280,23 +459,17 @@ https://templatemo.com/tm-573-eduwell
   </section>
   <!-- ***** Main Banner Area End ***** -->
 
-
-
-
-
   <section class="contact-us" id="contact-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
           <div id="map">
-
             <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.306899129498!2d4.336256976084156!3d50.82547906029095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4425028e0d7%3A0xf4641866f6191b6a!2sAv.%20du%20Parc%2087%2F89%2C%201060%20Saint-Gilles!5e0!3m2!1sfr!2sbe!4v1717266729811!5m2!1sfr!2sbe"
               width="100%" height="420" frameborder="0" style="border:0;"
               style="border:0; border-radius: 15px; position: relative; z-index: 2;" allowfullscreen=""
               referrerpolicy="no-referrer-when-downgrade"></iframe>
-
             <div class="row">
               <div class="col-lg-4 offset-lg-1">
                 <div class="contact-info">
@@ -359,12 +532,10 @@ https://templatemo.com/tm-573-eduwell
           <ul class="social-icons">
             <li><a href="https://github.com/Anthoonyyy" target="_blank"><i class="fa fa-github"></i></a></li>
             <li><a href="https://github.com/erdaserhan" target="_blank"><i class="fa fa-github"></i></a></li>
-
           </ul>
         </div>
         <div class="col-lg-12">
           <p class="copyright">Copyright © 2024 Anthony and Erhan. All Rights Reserved.
-
             <!-- <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
             <br>Distribution: <a rel="sponsored" href="https://themewagon.com" target="_blank">ThemeWagon</a>-->
           </p>
